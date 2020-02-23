@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/{any?}', 'HomeController@index')->where('any', '^(?!admin).*$');
+Route::get('/', 'HomeController@index');
 
 
 Route::group(['prefix' => 'admin'], function () {
