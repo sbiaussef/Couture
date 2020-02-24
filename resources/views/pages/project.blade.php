@@ -7,36 +7,15 @@
     <div class="section-content">
         <div class="masonry">
             <div class="row">
-                <div class="item">
-                    <div class="col-md-4">
-                        <a href="img/portfolio_big_2.jpg" data-lightbox="image"><img src="https://via.placeholder.com/643x580" alt="image 1"></a>
-                    </div>
-                </div>
-                <div class="item second-item">
-                    <div class="col-md-4">
-                        <a href="img/portfolio_big_2.jpg"" data-lightbox="image"><img src="https://via.placeholder.com/643x580" alt="image 2"></a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="col-md-4">
-                        <a href="img/portfolio_big_2.jpg"" data-lightbox="image"><img src="https://via.placeholder.com/643x580" alt="image 3"></a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="col-md-4">
-                        <a href="img/portfolio_big_2.jpg"" data-lightbox="image"><img src="https://via.placeholder.com/643x580" alt="image 4"></a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="col-md-4">
-                        <a href="img/portfolio_big_2.jpg"" data-lightbox="image"><img src="https://via.placeholder.com/643x580" alt="image 5"></a>
-                    </div>
-                </div>
-                    <div class="item">
-                    <div class="col-md-4">
-                        <a href="img/portfolio_big_2.jpg"" data-lightbox="image"><img src="https://via.placeholder.com/643x580" alt="image 6"></a>
-                    </div>
-                </div>
+                @if ($lastProducts) 
+                    @foreach ($lastProducts as $lastProduct)                           
+                        <div class="item">
+                            <div class="col-md-4">
+                            <a href="/storage/{{$lastProduct->picture}}" data-lightbox="image"><img src="/storage/{{$lastProduct->picture}}" alt="image 1"></a>
+                            </div>
+                        </div>
+                    @endforeach                  
+                @endif
             </div>
         </div>
     </div>            

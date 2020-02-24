@@ -599,7 +599,8 @@ header {
 
 #projects .masonry .item img {
   transition: all 1s;
-  width: 100%;
+  width: 306px;
+  height: 360px;
   overflow: hidden;
   margin-bottom: 30px;
 }

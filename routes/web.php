@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'HomeController@index');
-
+Route::get('collection/{slug}','CollectionController@showAllProductByCollection');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

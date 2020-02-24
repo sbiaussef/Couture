@@ -6,81 +6,25 @@
     </div>
     <div class="section-content">
         <div class="owl-carousel owl-theme">
-            <div class="item">
+            @if ($collections)
+               @foreach ($collections as $collection)
+               <div class="item">
                 <div class="image">
-                    <img src="https://via.placeholder.com/306x360" alt="">
+                <img src="/storage/{{$collection->picture}}" alt="">
                     <div class="featured-button button">
-                        <a href="#projects">Show More</a>
+                    <a href="{{url('collection/'.$collection->slug)}}" target="_blank">Show More</a>
                     </div>
                 </div>
                 <div class="text-content">
-                    <h4>Lorem ipsum dolor</h4>
-                    <span>Proin et sapien</span>
+                <h4>{{$collection->name}}</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus, tempore dolor quia magni assumenda iste saepe voluptatibus mollitia quis.
                     </p>
                 </div>
             </div>
-            <div class="item">
-                <div class="image">
-                    <img src="https://via.placeholder.com/306x360" alt="">
-                    <div class="featured-button button">
-                        <a href="#projects">Show More</a>
-                    </div>
-                </div>
-                <div class="text-content">
-                    <h4>Lorem ipsum dolor</h4>
-                    <span>Proin et sapien</span>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus, tempore dolor quia magni assumenda iste saepe voluptatibus mollitia quis.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="image">
-                    <img src="https://via.placeholder.com/306x360" alt="">
-                    <div class="featured-button button">
-                        <a href="#projects">Show More</a>
-                    </div>
-                </div>
-                <div class="text-content">
-                    <h4>Lorem ipsum dolor</h4>
-                    <span>Proin et sapien</span>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus, tempore dolor quia magni assumenda iste saepe voluptatibus mollitia quis.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="image">
-                    <img src="https://via.placeholder.com/306x360" alt="">
-                    <div class="featured-button button">
-                        <a href="#projects">Show More</a>
-                    </div>
-                </div>
-                <div class="text-content">
-                    <h4>Lorem ipsum dolor</h4>
-                    <span>Proin et sapien</span>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus, tempore dolor quia magni assumenda iste saepe voluptatibus mollitia quis.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="image">
-                    <img src="https://via.placeholder.com/306x360" alt="">
-                    <div class="featured-button button">
-                        <a href="#projects">Show More</a>
-                    </div>
-                </div>
-                <div class="text-content">
-                    <h4>Lorem ipsum dolor</h4>
-                    <span>Proin et sapien</span>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus, tempore dolor quia magni assumenda iste saepe voluptatibus mollitia quis.
-                    </p>
-                </div>
-            </div>
+               @endforeach 
+            @endif
+
         </div>
     </div>
 </section>

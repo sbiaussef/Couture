@@ -2,18 +2,26 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\Interfaces\CategoryInterface;
+use App\Repositories\Interfaces\CollectionInterface;
+use App\Repositories\Interfaces\ProductInterface;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    protected $product;
+    protected $collection;
+    protected $categories;
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(ProductInterface $product,CollectionInterface $collection,CategoryInterface $categories)
     {
-
+        $this->product=$product;
+        $this->collection= $collection;
+        $this->categories=$categories;
     }
 
     /**
@@ -23,6 +31,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+        $lastProducts=$this->product->getRecentProduct();
+        $collections=$this->collection->getAllCollections();
+        return view('welcome',[
+            'lastProducts'=>$lastProducts,
+            'collections'=>$collections,
+            ]);
     }
 }
