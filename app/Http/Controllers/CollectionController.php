@@ -22,8 +22,13 @@ class CollectionController extends Controller
     }
     public function showAllProductByCollection($slug){
 
-        $collections = $this->collection->getProductsByCollection($slug);
-        return view('collection',['collections'=>$collections]);
+        $collections = collect($this->collection->getProductsByCollection($slug));
+        // dd($collections->isNotEmpty());
+        // foreach($collections as $collection)
+        // {
+        //     dd($collection->name);
+        // }
+        return view('pages.collection',['collections'=>$collections]);
     
     }
 }

@@ -9,9 +9,10 @@
             <div class="row">
                 @if ($lastProducts) 
                     @foreach ($lastProducts as $lastProduct)                           
-                        <div class="item">
+                        <div class="item" data-aos="fade-up"
+                        data-aos-duration="3000">
                             <div class="col-md-4">
-                            <a href="/storage/{{$lastProduct->picture}}" data-lightbox="image"><img src="/storage/{{$lastProduct->picture}}" alt="image 1"></a>
+                            <a href="/storage/{{collect((json_decode($lastProduct->pictures)))->first()}}" data-lightbox="image"><img src="/storage/{{collect((json_decode($lastProduct->pictures)))->first()}}" alt="image 1"></a>
                             </div>
                         </div>
                     @endforeach                  

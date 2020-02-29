@@ -28,6 +28,45 @@ p {
   transform: translateX(-50%);
 }
 
+.collection-section{
+  padding-top: 80px;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  height: auto;
+  left:35%;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+#collection{
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 50px;
+}
+
+#collection .masonry {
+  position: relative;
+  width: 100%;
+}
+
+#collection .masonry .item img {
+  transition: all 1s;
+  width: 306px;
+  height: 360px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+#collection .masonry .item img:hover {
+  opacity: 0.5;
+}
+
+
+
 .section-heading {
   text-align: left;
   position: relative;
@@ -711,9 +750,143 @@ header {
 }
 
 
+/*product collection Style */
+.product-cover{
+  width: 100%;
+  height: 300px;
+  background-image: url("/img/orig.gif");
+  background-position: center;
+  margin: 0;
+ padding: 0;
+}
+.product-cover img{
+  margin: 30px 20px;
+}
+.product-cover .product-header{
+  text-align: center;
+  margin: 30px auto;
+ font-size: 350%;
+ font-weight: bold;
+ color: beige;
+}
+.product-content .error-product{
+  text-align: center;
+  margin: 30px 400px;
+ font-size: 500%;
+ font-weight: bold;
+ color:dimgrey;
+}
+.product-content{
+  padding: 50px 0;
+}
+.product-content h1{
+  font-size: 100px;
+  font-weight: bold;
+  padding-bottom: 100px;
+}
+.product-content .row .single-product{
+  padding-bottom: 35px;
+}
+/* .product-desc{
+  margin: 0 10px;
+  padding-top: 30px;
+  color: beige;
+  font-weight: bold;
+} */
 
+.hovereffect {
+  width:100%;
+  height:100%;
+  float:left;
+  overflow:hidden;
+  position:relative;
+  text-align:center;
+  cursor:default;
+  }
+  
+  .hovereffect .overlay {
+  width:100%;
+  height:100%;
+  position:absolute;
+  overflow:hidden;
+  top:0;
+  left:0;
+  opacity:0;
+  background-color:rgba(0,0,0,0.5);
+  -webkit-transition:all .4s ease-in-out;
+  transition:all .4s ease-in-out
+  }
+  
+  .hovereffect img {
+  display:block;
+  position:relative;
+  -webkit-transition:all .4s linear;
+  transition:all .4s linear;
+  margin: 0 auto;
+  width: 100%;
+  height: 360px;
+  }
+  
+  .hovereffect h2 {
+  text-transform:uppercase;
+  color:#fff;
+  text-align:center;
+  position:relative;
+  font-size:17px;
+  background:rgba(0,0,0,0.6);
+  -webkit-transform:translatey(-100px);
+  -ms-transform:translatey(-100px);
+  transform:translatey(-100px);
+  -webkit-transition:all .2s ease-in-out;
+  transition:all .2s ease-in-out;
+  padding:10px;
+  }
+  
+  .hovereffect a.info {
+  text-decoration:none;
+  display:inline-block;
+  text-transform:uppercase;
+  color:#fff;
+  border:1px solid #fff;
+  background-color:transparent;
+  opacity:0;
+  filter:alpha(opacity=0);
+  -webkit-transition:all .2s ease-in-out;
+  transition:all .2s ease-in-out;
+  margin:50px 0 0;
+  padding:7px 14px;
+  }
+  
+  .hovereffect a.info:hover {
+  box-shadow:0 0 5px #fff;
+  }
+  
+  .hovereffect:hover img {
+  -ms-transform:scale(1.2);
+  -webkit-transform:scale(1.2);
+  transform:scale(1.2);
+  }
+  
+  .hovereffect:hover .overlay {
+  opacity:1;
+  filter:alpha(opacity=100);
+  }
+  
+  .hovereffect:hover h2,.hovereffect:hover a.info {
+  opacity:1;
+  filter:alpha(opacity=100);
+  -ms-transform:translatey(0);
+  -webkit-transform:translatey(0);
+  transform:translatey(0);
+  }
+  
+  .hovereffect:hover a.info {
+  -webkit-transition-delay:.2s;
+  transition-delay:.2s;
+  }
+/* end product collection */
 
-/* Blog Style */
+/* products Style */
 
 #products {
   padding-left: 60px;
@@ -938,12 +1111,118 @@ header {
   font-weight: 600;
 }
 
-
-
+.error-page{
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 300px;
+  width: 100%;
+}
+.error-page .logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+.error-page .fof {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+.error-page .fof  h1 {
+font-size: 500px;
+font-weight: bold;
+}
+.p-fof{
+  padding: 100px 10px;;
+  font-size: 50px;
+  line-height:1.2em;
+font-weight: bold;
+}
+.tabgroup div ul li img{
+  height: 230px;
+  width: 306px;
+}
+.text-content p{
+  width: 850px;
+}
 /* Responsive Style */
 
 @media (max-width: 992px) {
 
+  .product-cover{
+    width: 100%;
+    height: 300px;
+    background-image: url("/img/orig.gif");
+    background-position: center;
+    margin: 0;
+   padding: 0;
+  }
+  .product-cover img{
+    margin: 30px 20px;
+  }
+  .product-cover .product-header{
+    text-align: center;
+    margin: 30px auto;
+   font-size: 350%;
+   font-weight: bold;
+   color: beige;
+  }
+  .product-content .error-product{
+    text-align: center;
+    margin: 30px 400px;
+   font-size: 500%;
+   font-weight: bold;
+   color:dimgrey;
+  }
+  .product-content{
+    padding: 50px 0;
+  }
+  .product-content h1{
+    font-size: 100px;
+    font-weight: bold;
+    padding-bottom: 100px;
+  }
+  .product-content .row .single-product{
+    padding-bottom: 35px;
+  }
+  .hovereffect img {
+    display:block;
+    position:relative;
+    -webkit-transition:all .4s linear;
+    transition:all .4s linear;
+    margin: 0 auto;
+    width: 100%;
+    height: 360px;
+    }
+    .hovereffect {
+      width:100%;
+      height:100%;
+      float:left;
+      overflow:hidden;
+      position:relative;
+      text-align:center;
+      cursor:default;
+      margin: 20px auto;
+      }
+      .single-product{
+        width:100%;
+        padding: 0 auto;
+      }
+    .hovereffect .overlay {
+      width:100%;
+      height:100%;
+      position:absolute;
+      overflow:hidden;
+      top:0;
+      left:0;
+      opacity:0;
+      background-color:rgba(0,0,0,0.5);
+      -webkit-transition:all .4s ease-in-out;
+      transition:all .4s ease-in-out
+      }
   .responsive-nav {
     display: none;
   }
@@ -963,12 +1242,69 @@ header {
   .sidebar-navigation .social-icons li a {
     font-size: 15px;
   }
+  .error-page .fof  h1 {
+    font-size: 300px;
+    font-weight: bold;
+    }
+    .p-fof{
+      padding: 150px 5px;
+      font-size: 30px;
+    font-weight: bold;
+    }
 
 }
 
 
 @media (max-width: 767px) {
 
+  .product-cover .product-header{
+    text-align: center;
+    margin: 30px auto;
+   font-size: 250%;
+   font-weight: bold;
+   color: beige;
+  }
+  .product-content h1{
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 70px;
+  }
+  .hovereffect img {
+    display:block;
+    position:relative;
+    -webkit-transition:all .4s linear;
+    transition:all .4s linear;
+    margin: 0 auto;
+    width: 100%;
+    height: 360px;
+    }
+    .hovereffect {
+      width:100%;
+      height:100%;
+      float:left;
+      overflow:hidden;
+      position:relative;
+      text-align:center;
+      cursor:default;
+      margin: 20px auto;
+      padding: 20px 20px;
+      }
+      .single-product{
+        width:100%;
+        padding: 0 auto;
+      }
+    .hovereffect .overlay {
+      width:100%;
+      height:100%;
+      position:absolute;
+      overflow:hidden;
+      top:0;
+      left:0;
+      opacity:0;
+      background-color:rgba(0,0,0,0.5);
+      -webkit-transition:all .4s ease-in-out;
+      transition:all .4s ease-in-out
+      }
   .responsive-nav {
     display: block;
     height: 60px;
@@ -1027,6 +1363,7 @@ header {
 
 @media (max-width: 690px) {
 
+  
   .section-heading p {
     position: relative;
   }
@@ -1047,6 +1384,27 @@ header {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  #collection {
+    margin: 30px auto;
+
+  }
+  
+element.style {
+}
+section#collection {
+}
+@media (max-width: 690px)
+#collection {
+    margin: 30px auto;
+}
+#collection {
+    padding-left: 60px;
+    padding-bottom: 50px;
+}
+.collection-section{
+  left:41%;
+}
 
   #about {
     padding-left: 15px;
@@ -1075,5 +1433,13 @@ header {
     padding-left: 15px;
     padding-right: 15px;
   }
-
+  .error-page .fof  h1 {
+    font-size: 100px;
+    font-weight: bold;
+    }
+    .p-fof{
+      padding: 150px 5px;
+      font-size: 30px;
+    font-weight: bold;
+    }
 }

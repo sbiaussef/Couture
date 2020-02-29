@@ -2,18 +2,23 @@
 namespace App\Repositories\Eloquent;
 
 use App\Collection;
+use Illuminate\Database\Eloquent\Builder;
 use App\Repositories\Interfaces\CollectionInterface;
 
 class CollectionRepository implements CollectionInterface
 {
     public function getAllCollections(){
         
-        return Collection::orderBy('created_at', 'desc')->get();
+        return Collection::orderBy('created_at', 'desc')->get(['id','name','picture','slug']);
         
     }
     public function getProductsByCollection( $slug ){
 
-        return Collection::with('products')->where('slug', $slug)->paginate(6);
+       return Collection::with('Products:id,productName,productDescription,pictures,slug,collection_id')
+                        ->where('slug',$slug)
+                        ->get(['id','name'])
+       
+                ;
 
     }
 }

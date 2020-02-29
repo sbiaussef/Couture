@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Product;
 use App\Repositories\Interfaces\CategoryInterface;
 use App\Repositories\Interfaces\CollectionInterface;
 use App\Repositories\Interfaces\ProductInterface;
@@ -33,9 +34,17 @@ class HomeController extends Controller
     {
         $lastProducts=$this->product->getRecentProduct();
         $collections=$this->collection->getAllCollections();
+        $productsCategoy=$this->categories->getProductsByCategory();
+            // dd($productsCategoy);
+            // foreach($productsCategoy as $product)
+            // {
+            //     dd(collect((json_decode($product->pictures)))->first());
+            // }
+
         return view('welcome',[
             'lastProducts'=>$lastProducts,
             'collections'=>$collections,
+            'productsCategoy'=>$productsCategoy,
             ]);
     }
 }

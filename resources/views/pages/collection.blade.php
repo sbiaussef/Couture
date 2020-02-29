@@ -1,7 +1,5 @@
 @extends('Master.layout')
-@section('style')
-    <link rel="stylesheet" href="/css/command.css">
-@endsection
+
 @section('content')
 @include('includes.background')
 <div class="container product-content">

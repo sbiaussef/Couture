@@ -1,4 +1,4 @@
-<div class="sidebar-navigation hidde-sm hidden-xs">
+<div class="sidebar-navigation hidde-sm hidden-xs" data-aos="fade-down">
     <div class="logo">
         <img src="img/logo.png" alt="say couture"></a>
     </div>

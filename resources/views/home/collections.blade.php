@@ -1,4 +1,4 @@
-<section id="collections" class="content-section">
+<section id="collections" class="content-section" >
     <div class="section-heading">
         <h1>Our<br><em>Collections</em></h1>
         <p>Praesent pellentesque efficitur magna, 
@@ -8,7 +8,10 @@
         <div class="owl-carousel owl-theme">
             @if ($collections)
                @foreach ($collections as $collection)
-               <div class="item">
+               <div class="item" data-aos="fade-down"
+               data-aos-easing="linear"
+               data-aos-duration="1500"data-aos="fade-up"
+               data-aos-duration="3000">
                 <div class="image">
                 <img src="/storage/{{$collection->picture}}" alt="">
                     <div class="featured-button button">

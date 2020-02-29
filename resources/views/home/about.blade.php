@@ -1,6 +1,8 @@
 <section id="about" class="content-section">
-    <div class="row">
-        <div class="col-md-12">
+    <div class="row" >
+        <div class="col-md-12" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
             <div class="section-heading">
                 <h1>“La <em>simplicité</em>  est le secret de l’élégance„</h1>
                 <hr>

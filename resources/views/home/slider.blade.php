@@ -1,4 +1,4 @@
-<div class="slider">
+<div class="slider" data-aos="fade-left">
     <div class="Modern-Slider content-section" id="top">
         <!-- Item -->
         <div class="item item-1">
