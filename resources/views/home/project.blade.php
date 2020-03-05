@@ -11,8 +11,8 @@
                     @foreach ($lastProducts as $lastProduct)                           
                         <div class="item" data-aos="fade-up"
                         data-aos-duration="3000">
-                            <div class="col-md-4">
-                            <a href="/storage/{{collect((json_decode($lastProduct->pictures)))->first()}}" data-lightbox="image"><img src="/storage/{{collect((json_decode($lastProduct->pictures)))->first()}}" alt="image 1"></a>
+                            <div class="col-sm-6 col-md-4">
+                            <a href="/storage/{{collect((json_decode($lastProduct->pictures)))->first()}}" data-lightbox="image"><img src="/storage/{{collect((json_decode($lastProduct->pictures)))->first()}}" class="img-responsive" alt="image 1"></a>
                             </div>
                         </div>
                     @endforeach                  

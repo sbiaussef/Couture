@@ -62,7 +62,7 @@
                         </h5> --}}
                         <div class="action">
                             <div class="accent-button button">
-                                <a href="{{url('product/'.$product->slug.'/command')}}" target="_blank">take it now</a>
+                                <a href="{{url('product/'.$product->slug.'/command')}}">take it now</a>
                             </div>
                         </div>
                     </div>         

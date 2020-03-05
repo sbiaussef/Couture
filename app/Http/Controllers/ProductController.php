@@ -19,6 +19,6 @@ class ProductController extends Controller
     }
     public function command($slug){
         $products = $this->product->getProductBySlug($slug);
-        return view('pages.product',['products' => $products]);
+        return view('pages.command',['products' => $products]);
     }
 }

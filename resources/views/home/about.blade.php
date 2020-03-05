@@ -7,8 +7,8 @@
                 <h1>“La <em>simplicité</em>  est le secret de l’élégance„</h1>
                 <hr>
             </div>
-            <div class="text-content">
-                <p>                                                                              
+            <div class="text-describ">
+                <p class="text-center">                                                                              
                     Ce slogan pour décrire les créations de<em> SAY COUTURE</em>, <b>Wafaa Chafiq</b> la créatrice de mode marocaine traditionnelle basée à Casablanca.
                     Après avoir fait ses études en contrôle de gestion elle se focalise sur sa passion et se lance dans 
                     le domaine de création de mode marocaine traditionnelle afin de concrétiser ses projets qui étaient en instances depuis quelques années.

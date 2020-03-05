@@ -8,22 +8,21 @@ class Customer extends Model
 {
     protected $fillable = [
         'customerID',
-        'firstName',
-        'lastName',
-        'adress',
-        'city',
-        'state',
-        'postalCode',
-        'country',
+        'name',
+        // 'adress',
+        // 'city',
+        // 'state',
+        // 'postalCode',
+        // 'country',
         'phone',
         'email',
-        'password',
+        // 'password',
     ];
 
     protected $hidden = ['_token'];
     public function order()
     {
-        return $this->hasMany('App\Order', 'costomerID', 'costomerID');
+        return $this->hasMany('App\Order');
     }
 
 }

@@ -35,5 +35,9 @@ class RepositoryServiceProvider extends ServiceProvider
             'App\Repositories\Interfaces\CategoryInterface',
             'App\Repositories\Eloquent\CategoryRepository'
         );
+        $this->app->bind(
+            'App\Repositories\Interfaces\CommandInterface',
+            'App\Repositories\Eloquent\CommandRepository'
+        );
     }
 }

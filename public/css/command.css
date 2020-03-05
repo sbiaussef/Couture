@@ -1,0 +1,138 @@
+.command-top {
+    padding: 30px 0;
+}
+.img img{
+    margin: 0 auto;
+}
+.title {
+    font-weight: bold;
+    padding: 30px 0;
+}
+
+.icon-graph {
+    position: relative;
+}
+
+.details {
+    padding: 30px;
+    margin-left: 120px;
+}
+
+.details div {
+    margin: 25px 0;
+}
+.details div span{
+    font-weight: 600;
+}
+
+
+.details div .input-text {
+    float: right;
+    border: none;
+    border-bottom: 2px dotted black;
+    margin-top: -10px;
+}
+
+.details div .input-radio {
+    width: 15px;
+    margin: 0 5px;
+}
+.details .radio-form{
+    padding: 0 30px;
+}
+.details .radio-form span{
+    padding-left:10px;
+    font-weight: 500;
+}
+.accent-button button {
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    background-color: #ac8533;
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    padding: 0px 25px;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.accent-button button:hover {
+    color: #ac8533;
+    background-color: #fff;
+}
+.col{
+    font-size: 20px;
+}
+.card {
+    padding: 50px 0;
+}
+
+#name,
+#phone {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 90%;
+    height: 40px;
+    padding-left: 20px;
+}
+
+#email {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 70%;
+    height: 40px;
+    padding-left: 25px;
+}
+
+#comment {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 40px;
+    padding-left: 25px;
+}
+
+.icon {
+    position: absolute;
+    padding: 10px;
+    min-width: 40px;
+}
+
+
+@media (max-width:1125px) {
+
+    .details {
+        padding: 10px;
+        margin-left: 60px;
+    }
+}
+@media (max-width:991px) {
+
+    #email,
+    #name,
+    #phone {
+        width: 100%;
+    }
+
+    .details {
+
+        margin-left: 0;
+    }
+
+}
+@media (max-width:491px) {
+    .details {
+        margin-left: 0;
+    }
+    .details .radio-form {
+        padding: 5px 0;
+    }
+    .details div .input-text{
+        width: 100%;
+        margin-bottom: 35px;
+        margin-top: 15px;
+    }
+}
