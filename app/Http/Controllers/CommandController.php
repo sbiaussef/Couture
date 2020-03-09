@@ -2,28 +2,39 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CombinedRequest;
 use App\Repositories\Interfaces\CommandInterface;
-use Illuminate\Http\Request;
-use PDF;
+
 class CommandController extends Controller
 {
     protected $command;
+
     public function __construct(CommandInterface $command)
     {
         $this->command=$command;
     }
 
-    public function index(){
-        $products=$this->command->addCustomer();
-        //dd($product->id);
+    public function index(CombinedRequest $request){
+        
+        $products=$this->command->addCustomer($request);
+
         $order=$this->command->addNewOrder($products->id);
-        // dd($order);
-        $orderDetails=$this->command->addOrderDetails($order->id);
 
+        $orderDetails=$this->command->addOrderDetails($order->id,$request);
 
-        $pdf = PDF::loadView('pages.command',['products'=>$products]);
-        return $pdf->download('invoice.pdf');
+        return view('pages.confirmOrder');
+    }
 
-        return redirect()->back();
+    /**
+    * Comment...............
+    *
+    * @param  Class param
+    * @return void
+    */
+    public function confirmOrder($token){
+
+        $this->command->orderConfirmed($token);
+
+        return view('pages.OrderConfirmed');
     }
 }

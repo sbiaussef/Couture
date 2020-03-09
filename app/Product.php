@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
 
 class Product extends Model
 {
@@ -24,6 +25,12 @@ class Product extends Model
         'note',
         'slug'
 ];
+
+public function scopeGetProduct(Builder $builder,$product){
+
+    return $builder->where('id',$product)->get(['id','productName','pictures',])->first();
+
+}
     public function supplier()
     {
         return $this->belongsTo('App\Supplier');
@@ -38,7 +45,7 @@ class Product extends Model
     }
     public function orderDetail()
     {
-        return $this->hasMany('App\OrderDetail');
+        return $this->hasMany(OrderDetail::class);
     }
 
 }

@@ -7,23 +7,22 @@ use Illuminate\Database\Eloquent\Model;
 class OrderDetail extends Model
 {
     protected $fillable = [
-            'orderDetailsID',
-            'productID',
-            'orderID',
-            'price',
-            'quantity',
-            'discount',
-            'total',
-            'size',
-            'color'
+            'id',
+            'product_id',
+            'order_id',
+            // 'price',
+            // 'quantity',
+            // 'discount',
+            // 'total',
+            'details',
     ];
 
     public function product()
     {
-        return $this->belongsTo('App\Product', 'productID');
+        return $this->belongsTo(Product::class);
     }
     public function order()
     {
-        return $this->belongsTo('App\Order', 'orderID');
+        return $this->belongsTo(Order::class);
     }
 }

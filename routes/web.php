@@ -11,11 +11,12 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('home');
 Route::get('collection/{slug}','CollectionController@showAllProductByCollection');
 Route::get('product/{slug}','ProductController@show');
 Route::get('product/{slug}/command','ProductController@command');
 Route::post('/command','CommandController@index')->name('command');
+Route::get('/confirm/{token}','CommandController@confirmOrder');
 
 
 Route::group(['prefix' => 'admin'], function () {

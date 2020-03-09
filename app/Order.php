@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
@@ -9,6 +10,8 @@ class Order extends Model
     protected $fillable = [
             'id',
             'customer_id',
+            'token',
+            'confimed'
             // 'payment_id',
             // 'shipper_id',
             // 'orderDate',
@@ -16,6 +19,18 @@ class Order extends Model
             // 'freight',
             // 'tax'
     ];
+
+    public function scopeGetOrder(Builder $builder,$order){
+
+        return $builder->with('orderDetails:id,product_id,order_id,details')
+                    ->with('customer:id,name,email')
+                    ->where('id',$order)
+                    ->get(['id','customer_id','token'])
+                    ->first();
+
+    }
+    
+
     public function customer()
     {
         return $this->belongsTo('App\Customer');
@@ -29,9 +44,9 @@ class Order extends Model
         return $this->belongsTo('App\Shipper');
     }
 
-    public function orderDetail()
+    public function orderDetails()
     {
-        return $this->hasMany('App\OrderDetail');
+        return $this->hasMany(OrderDetail::class);
     }
 
 }
