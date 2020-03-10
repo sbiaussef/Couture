@@ -54,8 +54,9 @@ class CommandRepository implements CommandInterface{
     }
 
     public function orderConfirmed($token){
-        $order=Order::where('token',$token)->first();
-        $order->confirmed=1;
-        $order->save();
+        Order::where('token',$token)
+        ->first()
+        ->update(['confirmed'=>1]);
     }
+
 }

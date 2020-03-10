@@ -2,16 +2,20 @@
 
 namespace App;
 
+use App\Events\OrderUpdated;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
+    protected $dispatchesEvents = [
+        'updated' => OrderUpdated::class,
+    ];
     protected $fillable = [
             'id',
             'customer_id',
             'token',
-            'confimed'
+            'confirmed'
             // 'payment_id',
             // 'shipper_id',
             // 'orderDate',
@@ -19,7 +23,6 @@ class Order extends Model
             // 'freight',
             // 'tax'
     ];
-
     public function scopeGetOrder(Builder $builder,$order){
 
         return $builder->with('orderDetails:id,product_id,order_id,details')
@@ -48,5 +51,6 @@ class Order extends Model
     {
         return $this->hasMany(OrderDetail::class);
     }
+
 
 }

@@ -15,6 +15,7 @@ class CommandMail extends Mailable
 
     protected $order;
     protected $product;
+
     /**
      * Create a new message instance.
      *
@@ -24,6 +25,7 @@ class CommandMail extends Mailable
     {
         $this->order=$order;
         $this->product=$product;
+        
     }
 
     /**
@@ -33,15 +35,16 @@ class CommandMail extends Mailable
      */
     public function build()
     {
-        $picture =collect((json_decode($this->product->pictures)))->first();
-        
+        $picture =collect(json_decode($this->product->pictures))->first();
+
         return $this->from("sbia.youssef@gmail.com")
                     ->subject('Confirm your Order')
                     ->view('email.customerEmail')
                     ->with([
                         'order' => $this->order,
                         'product' => $this->product,
-                        'picture'=> $picture
+                        'picture'=> $picture,
+
                     ]);
     }
 }

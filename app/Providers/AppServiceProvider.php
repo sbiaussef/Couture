@@ -2,8 +2,10 @@
 
 namespace App\Providers;
 
-use App\Observers\OrderDetailObserver;
+use App\Order;
 use App\OrderDetail;
+use Illuminate\Support\Facades\Log;
+use App\Observers\OrderDetailObserver;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider

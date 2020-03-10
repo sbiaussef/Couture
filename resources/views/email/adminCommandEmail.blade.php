@@ -398,14 +398,58 @@
                             <img src="{{ asset("storage/$picture") }}">
                             </td>
                           </tr>
+
                           <tr>
                             <td align="center">
-                              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                <tbody>
-                                  <tr>
-                                  <td> <a href="{{url('/confirm')}}" target="_blank">Confim your order please</a> </td>
-                                  </tr>
-                                </tbody>
+                              <table role="presentation" border="1" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <th>emmanchure</th>
+                                  <th>{{$details->emmanchure}}</td>
+                                </tr>
+                                <tr>
+                                  <th>haut du bras</th>
+                                  <th>{{$details->haut_du_bras}}</td>
+                                </tr>
+                                <tr>
+                                  <th>tour du poignet</th>
+                                  <th>{{$details->tour_du_poignet}}</td>
+                                </tr>
+                                <tr>
+                                  <th>longueur des manches</th>
+                                  <th>{{$details->longueur_des_manches}}</td>
+                                </tr>
+                                <tr>
+                                  <th>tour des hanches</th>
+                                  <th>{{$details->tour_des_hanches}}</td>
+                                </tr>
+                                <tr>
+                                  <th>tour de taille</th>
+                                  <th>{{$details->tour_de_taille}}</td>
+                                </tr>
+                                <tr>
+                                  <th>tour de poitrine</th>
+                                  <th>{{$details->tour_de_poitrine}}</td>
+                                </tr>
+                                <tr>
+                                  <th>profondeur du col</th>
+                                  <th>{{$details->profondeur_du_col}}</td>
+                                </tr>
+                                <tr>
+                                  <th>type du col</th>
+                                  <th>{{$details->type_du_col}}</td>
+                                </tr>
+                                <tr>
+                                  <th>longueur poitrine</th>
+                                  <th>{{$details->longueur_poitrine}}</td>
+                                </tr>
+                                <tr>
+                                  <th>taille</th>
+                                  <th>{{$details->taille}}</td>
+                                </tr>
+                                <tr>
+                                  <th>taille des epaules</th>
+                                  <th>{{$details->taille_des_epaules}}</th>
+                                </tr>
                               </table>
                             </td>
                           </tr>

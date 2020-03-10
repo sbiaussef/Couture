@@ -11,17 +11,19 @@ class AdminCommandMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    protected $order;
+
     protected $product;
+    protected $orderDetail;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($order,$product)
+    public function __construct($product,$orderDetail)
     {
-        $this->order=$order;
+
         $this->product=$product;
+        $this->orderDetail=$orderDetail;
     }
 
 
@@ -33,14 +35,14 @@ class AdminCommandMail extends Mailable
     public function build()
     {
         $picture =collect((json_decode($this->product->pictures)))->first();
-
+        $details=json_decode($this->orderDetail->details);
         return $this->from("sbia.youssef@gmail.com")
                     ->subject('Nex Order is passed')
                     ->view('email.adminCommandEmail')
                     ->with([
-                        'order' => $this->order,
                         'product' => $this->product,
-                        'picture'=> $picture
+                        'picture'=> $picture,
+                        'details'=>$details
                     ]);
 
     }

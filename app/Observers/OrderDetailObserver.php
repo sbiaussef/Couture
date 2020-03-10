@@ -25,12 +25,9 @@ class OrderDetailObserver{
         $orderInfo   = Order::getOrder($orderDetail->order_id);
         $productinfo = Product::getProduct($orderDetail->product_id);
 
-        $admins = User::where('role_id',Role::where('name','admin')->get(['id'])->first()->id)
-                        ->pluck('email')->toArray();
-
         try {
             Mail::to(request()->email)->send(new CommandMail($orderInfo,$productinfo));
-            Mail::to($admins)->send(new AdminCommandMail($orderInfo,$productinfo));
+            
         } catch (\Throwable $th) {
             return $th;
         }
