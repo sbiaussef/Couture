@@ -2,15 +2,8 @@
 
 namespace App\Observers;
 
-use App\Order;
-use App\Product;
 use App\OrderDetail;
-use App\Mail\CommandMail;
-use TCG\Voyager\Models\Role;
-use TCG\Voyager\Models\User;
-use App\Mail\AdminCommandMail;
 use App\Services\OrderService;
-use Illuminate\Support\Facades\Mail;
 
 class OrderDetailObserver{
     

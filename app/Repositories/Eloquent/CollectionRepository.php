@@ -2,7 +2,6 @@
 namespace App\Repositories\Eloquent;
 
 use App\Collection;
-use Illuminate\Database\Eloquent\Builder;
 use App\Repositories\Interfaces\CollectionInterface;
 
 class CollectionRepository implements CollectionInterface

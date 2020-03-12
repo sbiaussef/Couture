@@ -2,12 +2,11 @@
 
 namespace App\Mail;
 
-use App\Repositories\Interfaces\CommandInterface;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Support\Facades\Config;
+
 
 class CommandMail extends Mailable
 {

@@ -2,13 +2,7 @@
 
 namespace App\Listeners;
 
-use App\Order;
-use App\Product;
-use App\OrderDetail;
 use App\Events\OrderUpdated;
-use TCG\Voyager\Models\Role;
-use TCG\Voyager\Models\User;
-use App\Mail\AdminCommandMail;
 use App\Services\EventService;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Queue\InteractsWithQueue;
