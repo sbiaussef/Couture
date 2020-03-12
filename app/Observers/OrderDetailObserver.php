@@ -2,17 +2,19 @@
 
 namespace App\Observers;
 
-use App\Mail\AdminCommandMail;
-use App\Mail\CommandMail;
 use App\Order;
-use App\OrderDetail;
 use App\Product;
-use Illuminate\Support\Facades\Mail;
+use App\OrderDetail;
+use App\Mail\CommandMail;
 use TCG\Voyager\Models\Role;
 use TCG\Voyager\Models\User;
+use App\Mail\AdminCommandMail;
+use App\Services\OrderService;
+use Illuminate\Support\Facades\Mail;
 
 class OrderDetailObserver{
-
+    
+    
         /**
      * Listen to the Order created event.
      *
@@ -21,16 +23,10 @@ class OrderDetailObserver{
      */
     public function created(OrderDetail $orderDetail)
     {   
+        $order =new OrderService();
+        
+        $order->sendEmailToUser($orderDetail);
 
-        $orderInfo   = Order::getOrder($orderDetail->order_id);
-        $productinfo = Product::getProduct($orderDetail->product_id);
-
-        try {
-            Mail::to(request()->email)->send(new CommandMail($orderInfo,$productinfo));
-            
-        } catch (\Throwable $th) {
-            return $th;
-        }
     }
 
     /**
