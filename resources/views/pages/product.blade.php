@@ -22,13 +22,12 @@
                             </div>
                             @endforeach
                         </div>
-                        <ul class="preview-thumbnail nav nav-tabs">
-                            @foreach (collect((json_decode($product->pictures))) as $url)
-                            <li class="{{$loop->first==$url?'active':''}}"><a data-target="#pic-{{ $loop->iteration }}" data-toggle="tab"><img
-                                        src="/storage/{{$url}}" /></a></li>
-                            @endforeach
-                        </ul>
-                            
+                            <ul class="preview-thumbnail nav nav-tabs">
+                                @foreach (collect((json_decode($product->pictures))) as $url)
+                                <li class="{{$loop->first==$url?'active':''}}"><a data-target="#pic-{{ $loop->iteration }}" data-toggle="tab"><img
+                                            src="/storage/{{$url}}" /></a></li>
+                                @endforeach
+                            </ul>
 
                             @else
                             <h1 class="error-product">this is No Pictures for this Product</h1> 
