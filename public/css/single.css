@@ -261,4 +261,14 @@
 }
 
 }
+@media (max-width : 614px){
+  .preview-thumbnail.nav-tabs li {
+    width: 19.4%;
+}
+}
+@media (max-width : 534px){
+  .preview-thumbnail.nav-tabs li {
+    width: 19.3%;
+}
+}
 /*# sourceMappingURL=style.css.map *
