@@ -30,7 +30,7 @@
                                                     <div class="text-content">
                                                         <h4>{{ $product->productName }}</h4>
                                                         <span>{{($product->created_at)->toFormattedDateString()}}</span>
-                                                        <p>{{ $product->productDescription }}</p>
+                                                        <p>{{ str_limit($product->productDescription,'50','...') }}</p>
                                                         
                                                         <div class="accent-button button">
                                                             <a href="{{url('product/'.$product->slug)}}" target="_blank">Show more</a>

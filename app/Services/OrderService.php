@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Mail;
 
 class OrderService{
 
-    public function sendEmailToUser($orderDetail){
+     public static function sendEmailToUser($orderDetail){
         
         $orderInfo   = Order::getOrder($orderDetail->order_id);
         $productinfo = Product::getProduct($orderDetail->product_id);

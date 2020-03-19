@@ -10,16 +10,16 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 
 class SendEmailToAdministrator
 {
-    protected $eventService;
+    
 
     /**
      * Create the event listener.
      *
      * @return void
      */
-    public function __construct(EventService $eventService)
+    public function __construct()
     {
-        $this->eventService=$eventService;
+        
     }
 
     /**
@@ -30,6 +30,6 @@ class SendEmailToAdministrator
      */
     public function handle(OrderUpdated $event)
     {
-        $this->eventService->sendEmailToAdmin($event);
+        EventService::sendEmailToAdmin($event);
     }
 }

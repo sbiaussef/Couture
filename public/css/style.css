@@ -1266,18 +1266,19 @@ font-weight: bold;
 }
 
 @media (max-width: 885px) {
+  
+  #products .tabgroup ul li {
+    display: block;
+    text-align: center;
+  }
   #products .tabgroup ul li img {
     width: 100%;
 }
   .text-content p {
     width: 100%;
 }
-.text-content h4 {
-  text-align: center;
-  }
-#products .item .text-content span {
-  margin-left: 37%;
-}
+
+
 
 }
 @media (max-width: 767px) {
