@@ -18,7 +18,7 @@ class EventService{
     * @param  Class param
     * @return void
     */
-    function sendEmailToAdmin($event){
+    public static function sendEmailToAdmin($event){
         $orderDetail=OrderDetail::where('order_id',$event->order->id)->get()->first();
         $productinfo = Product::getProduct($orderDetail->product_id);
         $admins = User::where('role_id',Role::where('name','admin')->get(['id'])->first()->id)

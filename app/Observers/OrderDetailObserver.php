@@ -16,9 +16,9 @@ class OrderDetailObserver{
      */
     public function created(OrderDetail $orderDetail)
     {   
-        $order =new OrderService();
+
         
-        $order->sendEmailToUser($orderDetail);
+        OrderService::sendEmailToUser($orderDetail);
 
     }
 
