@@ -7,67 +7,140 @@
         </div>
         <div class="row"  >
             <div class="col-md-12" id="couture" >
-                <h4>☆SAY COUTURE☆ </h4>
+                <div class="panel-group" id="faqAccordion">
+                    <div class="panel panel-default ">
+                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
+                             <h4 class="panel-title">
+                                <a href="#" class="ing">Q: What is SAY COUTURE?</a>
+                          </h4>
+            
+                        </div>
+                        <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                            <div class="panel-body">
+                                 <h5><span class="label label-primary">Answer</span></h5>
+                                 <p> Vendez-vous des modèles prêts à porter?<br />
+                                    Nous Disposons de différents modèles sur place.</p>
+                
+                
+                                <p> Comment contacter l’atelier ?<br />
+                                    Si vous êtes à CASABLANCA, vous pouvez visiter notre atelier. la carte de localisation se trouve
+                                    dans la
+                                    section<br />
+                                    localisation de l'atelier. Si vous ne pouvez pas visiter notre atelier, vous pouvez nous contacter
+                                    par:<br />
+                                    - Courriel: wafa@saycouture.ma<br />
+                                    - Téléphone: 0708168797<br />
+                                </p>
+                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default ">
+                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
+                             <h4 class="panel-title">
+                                <a href="#" class="ing">Q: Comment passer une commande à distance ?</a>
+                          </h4>
+            
+                        </div>
+                        <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                            <div class="panel-body">
+                                 <h5><span class="label label-primary">Answer</span></h5>
+
+                                 <p> <br />
+                                    Choisissez d'abord le design que vous aimez. Remplissez ensuite le formulaire de mesure et
+                                    envoyez-le-nous
+                                    par
+                                    e-mail. Vous devez effectuer un acompte de 50% du montant total de la commande pour la faire
+                                    confirmer. Une
+                                    fois
+                                    que le caftan est prêt pour la livraison, un paiement du reste (50%) et les frais d'expédition
+                                    seront
+                                    nécessaires</p>
+                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default ">
+                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
+                             <h4 class="panel-title">
+                                <a href="#" class="ing">Q: M’envoie-t-on une confirmation de ma commande ?</a>
+                          </h4>
+            
+                        </div>
+                        <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                            <div class="panel-body">
+                                 <h5><span class="label label-primary">Answer</span></h5>
+
+                                 <p>Après avoir payé et finalisé la commande, vous recevez dans les minutes qui suivent une confirmation
+                                    de commande à l'adresse e-mail que vous avez indiqué.</p>
+                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default ">
+                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
+                             <h4 class="panel-title">
+                                <a href="#" class="ing">Q: Comment puis-je payer ma commande ?</a>
+                          </h4>
+            
+                        </div>
+                        <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                            <div class="panel-body">
+                                 <h5><span class="label label-primary">Answer</span></h5>
+
+                                 <p>
+                                    Vous pouvez payer la commande en espèces ou par virement.</p>
+                
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="panel panel-default ">
+                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
+                             <h4 class="panel-title">
+                                <a href="#" class="ing">Q: Comment puis-je recevoir ma commande si je n’habite pas à CASABLANCA ?</a>
+                          </h4>
+            
+                        </div>
+                        <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                            <div class="panel-body">
+                                 <h5><span class="label label-primary">Answer</span></h5>
+
+                                 <p>Nous avons des clients partout dans le monde, Nous utilisons ARAMEX pour livrer votre caftan à votre
+                                    porte.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default ">
+                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
+                             <h4 class="panel-title">
+                                <a href="#" class="ing">Q: Quel est le délai de livraison de ma commande ?</a>
+                          </h4>
+            
+                        </div>
+                        <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                            <div class="panel-body">
+                                 <h5><span class="label label-primary">Answer</span></h5>
+                                 <p> <br />
+                                    Le délai de livraison estimé entre 2 à 3 semaines pour préparer un design pour la livraison. La date
+                                    de
+                                    livraison prévue de votre commande est également mentionnée lors du paiement et dans votre
+                                    confirmation de
+                                    commande. Si vous avez commandé plusieurs articles avec des délais de livraison différents, c'est
+                                    toujours
+                                    le
+                                    délai de livraison le plus long dont il faut tenir compte.</p>
+                            </div>
+                        </div>
+                    </div>               
+                </div>
+                
 
 
-                <p> Vendez-vous des modèles prêts à porter?<br />
-                    Nous Disposons de différents modèles sur place.</p>
-
-
-                <p> Comment contacter l’atelier ?<br />
-                    Si vous êtes à CASABLANCA, vous pouvez visiter notre atelier. la carte de localisation se trouve
-                    dans la
-                    section<br />
-                    localisation de l'atelier. Si vous ne pouvez pas visiter notre atelier, vous pouvez nous contacter
-                    par:<br />
-                    - Courriel: wafa@saycouture.ma<br />
-                    - Téléphone: 0708168797<br /></p>
 
 
 
-                <h4> ♠ COMMANDER ♠ </h4>
-
-                <p> Comment passer une commande à distance ?<br />
-                    Choisissez d'abord le design que vous aimez. Remplissez ensuite le formulaire de mesure et
-                    envoyez-le-nous
-                    par
-                    e-mail. Vous devez effectuer un acompte de 50% du montant total de la commande pour la faire
-                    confirmer. Une
-                    fois
-                    que le caftan est prêt pour la livraison, un paiement du reste (50%) et les frais d'expédition
-                    seront
-                    nécessaires</p>
-
-                <p> M’envoie-t-on une confirmation de ma commande ?<br />
-                    Après avoir payé et finalisé la commande, vous recevez dans les minutes qui suivent une confirmation
-                    de
-                    commande
-                    à l'adresse e-mail que vous avez indiqué.</p>
 
 
-
-                <h4>♣ PAYER ♣</h4>
-
-                <p> Comment puis-je payer ma commande ?<br />
-                    Vous pouvez payer la commande en espèces ou par virement.</p>
-
-                <h4>♦ ENVOI ET LIVRAISON ♦</h4>
-
-
-                <p> Comment puis-je recevoir ma commande si je n’habite pas à CASABLANCA ?<br />
-                    Nous avons des clients partout dans le monde, Nous utilisons ARAMEX pour livrer votre caftan à votre
-                    porte.</p>
-
-
-                <p> Quel est le délai de livraison de ma commande ?<br />
-                    Le délai de livraison estimé entre 2 à 3 semaines pour préparer un design pour la livraison. La date
-                    de
-                    livraison prévue de votre commande est également mentionnée lors du paiement et dans votre
-                    confirmation de
-                    commande. Si vous avez commandé plusieurs articles avec des délais de livraison différents, c'est
-                    toujours
-                    le
-                    délai de livraison le plus long dont il faut tenir compte.</p>
 
             </div>
         </div>
