@@ -17,6 +17,7 @@ Route::get('product/{slug}','ProductController@show');
 Route::get('product/{slug}/command','ProductController@command');
 Route::post('/command','CommandController@index')->name('command');
 Route::get('/confirm/{token}','CommandController@confirmOrder');
+Route::get('/sitemap','siteMapController@index');
 
 
 Route::group(['prefix' => 'admin'], function () {
