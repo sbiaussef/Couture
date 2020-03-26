@@ -9,20 +9,33 @@
             <div class="col-md-12" id="couture" >
                 <div class="panel-group" id="faqAccordion">
                     <div class="panel panel-default ">
+                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question">
+                             
+                                <a  class="ing">Vendez-vous des modèles prêts à porter?</a>
+                          
+            
+                        </div>
+                        <div id="question" class="panel-collapse collapse" style="height: 0px;">
+                            <div class="panel-body">
+                                 <h5><span class="label label-primary">Answer</span></h5>
+                                 <p>
+                                    Nous Disposons de différents modèles sur place.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default ">
                         <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
-                             <h4 class="panel-title">
-                                <a href="#" class="ing">Q: What is SAY COUTURE?</a>
-                          </h4>
+                             
+                                <a  class="ing"> Comment contacter l’atelier ?</a>
+                          
             
                         </div>
                         <div id="question0" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body">
                                  <h5><span class="label label-primary">Answer</span></h5>
-                                 <p> Vendez-vous des modèles prêts à porter?<br />
-                                    Nous Disposons de différents modèles sur place.</p>
                 
                 
-                                <p> Comment contacter l’atelier ?<br />
+                                <p>
                                     Si vous êtes à CASABLANCA, vous pouvez visiter notre atelier. la carte de localisation se trouve
                                     dans la
                                     section<br />
@@ -36,13 +49,13 @@
                         </div>
                     </div>
                     <div class="panel panel-default ">
-                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
-                             <h4 class="panel-title">
-                                <a href="#" class="ing">Q: Comment passer une commande à distance ?</a>
-                          </h4>
+                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                             
+                                <a  class="ing">Q: Comment passer une commande à distance ?</a>
+                          
             
                         </div>
-                        <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                        <div id="question1" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body">
                                  <h5><span class="label label-primary">Answer</span></h5>
 
@@ -61,13 +74,13 @@
                         </div>
                     </div>
                     <div class="panel panel-default ">
-                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
-                             <h4 class="panel-title">
-                                <a href="#" class="ing">Q: M’envoie-t-on une confirmation de ma commande ?</a>
-                          </h4>
+                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question2">
+                             
+                                <a  class="ing">Q: M’envoie-t-on une confirmation de ma commande ?</a>
+                          
             
                         </div>
-                        <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                        <div id="question2" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body">
                                  <h5><span class="label label-primary">Answer</span></h5>
 
@@ -78,13 +91,13 @@
                         </div>
                     </div>
                     <div class="panel panel-default ">
-                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
-                             <h4 class="panel-title">
-                                <a href="#" class="ing">Q: Comment puis-je payer ma commande ?</a>
-                          </h4>
+                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question3">
+                             
+                                <a  class="ing">Q: Comment puis-je payer ma commande ?</a>
+                          
             
                         </div>
-                        <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                        <div id="question3" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body">
                                  <h5><span class="label label-primary">Answer</span></h5>
 
@@ -95,13 +108,13 @@
                         </div>
                     </div> 
                     <div class="panel panel-default ">
-                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
-                             <h4 class="panel-title">
-                                <a href="#" class="ing">Q: Comment puis-je recevoir ma commande si je n’habite pas à CASABLANCA ?</a>
-                          </h4>
+                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question4">
+                             
+                                <a  class="ing">Q: Comment puis-je recevoir ma commande si je n’habite pas à CASABLANCA ?</a>
+                          
             
                         </div>
-                        <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                        <div id="question4" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body">
                                  <h5><span class="label label-primary">Answer</span></h5>
 
@@ -111,13 +124,13 @@
                         </div>
                     </div>
                     <div class="panel panel-default ">
-                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
-                             <h4 class="panel-title">
-                                <a href="#" class="ing">Q: Quel est le délai de livraison de ma commande ?</a>
-                          </h4>
+                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question5">
+                             
+                                <a  class="ing">Q: Quel est le délai de livraison de ma commande ?</a>
+                          
             
                         </div>
-                        <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                        <div id="question5" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body">
                                  <h5><span class="label label-primary">Answer</span></h5>
                                  <p> <br />

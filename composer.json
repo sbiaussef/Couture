@@ -20,20 +20,12 @@
         "filp/whoops": "~2.0",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
-<<<<<<< HEAD
+
         "phpunit/phpunit": "~6.0",
         "barryvdh/laravel-debugbar":"3.2.9",
         "spatie/laravel-sitemap":"4.0"
-=======
-        "phpunit/phpunit": "4.5.0",
-<<<<<<< HEAD
-        "barryvdh/laravel-debugbar":"3.2.9",
-        "spatie/laravel-sitemap":"4.0"
-        
-=======
-        "barryvdh/laravel-debugbar":"3.2.9"
->>>>>>> 91d6d0b8d99cc59b51ff81cec279942a6529f41b
->>>>>>> 949143e47f8f2d3df2620a0a38f42516c8068c77
+
+
     },
     "autoload": {
         "classmap": [
