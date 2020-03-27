@@ -1,6 +1,6 @@
 <template>
   <div class="section-content">
-    <form id="contact" action="#" method="post">
+    <form id="contact" method="post">
       <div class="row">
         <div class="col-md-4">
           <fieldset>
@@ -9,9 +9,18 @@
               type="text"
               class="form-control"
               id="name"
+              :class="[{ 'border-danger': validation.name }]"
+              v-model="name"
               placeholder="Your name..."
               required=""
             />
+            <div v-if="validation.name" class="text-danger">
+              <ul>
+                <li v-for="(validate, index) in validation.name" :key="index">
+                  {{ validate }}
+                </li>
+              </ul>
+            </div>
           </fieldset>
         </div>
         <div class="col-md-4">
@@ -21,9 +30,18 @@
               type="email"
               class="form-control"
               id="email"
+              :class="[{ 'border-danger': validation.email }]"
+              v-model="email"
               placeholder="Your email..."
               required=""
             />
+            <div v-if="validation.email" class="text-danger">
+              <ul>
+                <li v-for="(validate, index) in validation.email" :key="index">
+                  {{ validate }}
+                </li>
+              </ul>
+            </div>
           </fieldset>
         </div>
         <div class="col-md-4">
@@ -33,9 +51,21 @@
               type="text"
               class="form-control"
               id="subject"
+              :class="[{ 'border-danger': validation.subject }]"
+              v-model="subject"
               placeholder="Subject..."
               required=""
             />
+            <div v-if="validation.subject" class="text-danger">
+              <ul>
+                <li
+                  v-for="(validate, index) in validation.subject"
+                  :key="index"
+                >
+                  {{ validate }}
+                </li>
+              </ul>
+            </div>
           </fieldset>
         </div>
         <div class="col-md-12">
@@ -45,14 +75,26 @@
               rows="6"
               class="form-control"
               id="message"
+              :class="[{ 'border-danger': validation.message }]"
+              v-model="message"
               placeholder="Your message..."
               required=""
             ></textarea>
+            <div v-if="validation.message" class="text-danger">
+              <ul>
+                <li
+                  v-for="(validate, index) in validation.message"
+                  :key="index"
+                >
+                  {{ validate }}
+                </li>
+              </ul>
+            </div>
           </fieldset>
         </div>
         <div class="col-md-12">
           <fieldset>
-            <button type="submit" id="form-submit" class="btn">
+            <button type="submit" id="form-submit" @click.prevent="sendMail()" class="btn">
               Send Message Now
             </button>
           </fieldset>

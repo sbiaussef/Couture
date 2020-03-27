@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\fromVisitorEmail;
+use App\Http\Requests\emailRequest;
+use Illuminate\Support\Facades\Mail;
+use App\Repositories\Interfaces\ProductInterface;
 use App\Repositories\Interfaces\CategoryInterface;
 use App\Repositories\Interfaces\CollectionInterface;
-use App\Repositories\Interfaces\ProductInterface;
 
 class HomeController extends Controller
 {
@@ -39,5 +42,23 @@ class HomeController extends Controller
             'collections'=>$collections,
             'productsCategoy'=>$productsCategoy,
             ]);
+    }
+
+    public function sendEmail(emailRequest $request){
+
+        $name=$request->name;
+        $email=$request->email;
+        $subject=$request->subject;
+        $message=$request->message;
+ 
+            try {
+                Mail::to("sbia.ussef@gmail.com")
+                    ->send(new fromVisitorEmail($name,$email,$subject,$message));
+            } catch (\Throwable $th) {
+                return $th;
+            }
+ 
+ 
+        return response()->json(["mesage"=>"add with success "], 200);
     }
 }

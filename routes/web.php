@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::post('/contact','HomeController@SendEmail');
 Route::get('collection/{slug}','CollectionController@showAllProductByCollection');
 Route::get('product/{slug}','ProductController@show');
 Route::get('product/{slug}/command','ProductController@command');
