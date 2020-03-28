@@ -15,11 +15,11 @@
               required=""
             />
             <div v-if="validation.name" class="text-danger">
-              <ul>
-                <li v-for="(validate, index) in validation.name" :key="index">
+              
+                <span v-for="(validate, index) in validation.name" :key="index">
                   {{ validate }}
-                </li>
-              </ul>
+                </span>
+              
             </div>
           </fieldset>
         </div>
@@ -36,11 +36,11 @@
               required=""
             />
             <div v-if="validation.email" class="text-danger">
-              <ul>
-                <li v-for="(validate, index) in validation.email" :key="index">
+              
+                <span v-for="(validate, index) in validation.email" :key="index">
                   {{ validate }}
-                </li>
-              </ul>
+                </span>
+              
             </div>
           </fieldset>
         </div>
@@ -57,14 +57,14 @@
               required=""
             />
             <div v-if="validation.subject" class="text-danger">
-              <ul>
-                <li
+              
+                <span
                   v-for="(validate, index) in validation.subject"
                   :key="index"
                 >
-                  {{ validate }}
-                </li>
-              </ul>
+                  {{ validate }}</span>
+                 
+              
             </div>
           </fieldset>
         </div>
@@ -81,14 +81,14 @@
               required=""
             ></textarea>
             <div v-if="validation.message" class="text-danger">
-              <ul>
-                <li
+
+                <span
                   v-for="(validate, index) in validation.message"
                   :key="index"
                 >
                   {{ validate }}
-                </li>
-              </ul>
+                </span>
+
             </div>
           </fieldset>
         </div>
@@ -135,7 +135,6 @@ export default {
         })
         .catch(err => {
           if (err.response.status == 422)
-            console.error(err.response.data.errors);
           this.validation = err.response.data.errors;
         });
     }
@@ -146,5 +145,8 @@ export default {
 <style scoped>
 .contact {
   background-color: white;
+}
+.text-danger{
+  margin-bottom: 10px;
 }
 </style>

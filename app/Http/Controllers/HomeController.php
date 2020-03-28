@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\Mail\fromVisitorEmail;
 use App\Http\Requests\emailRequest;
 use Illuminate\Support\Facades\Mail;
@@ -35,13 +36,18 @@ class HomeController extends Controller
     {
         $lastProducts=$this->product->getRecentProduct();
         $collections=$this->collection->getAllCollections();
-        $productsCategoy=$this->categories->getProductsByCategory();
-
+        
         return view('welcome',[
             'lastProducts'=>$lastProducts,
             'collections'=>$collections,
-            'productsCategoy'=>$productsCategoy,
             ]);
+        }
+        
+    public function productByCategory(Request $request){
+
+            $productsCategoy=$this->categories->getProductsByCategory($request->get('category')); 
+            return response()->json($productsCategoy);
+            
     }
 
     public function sendEmail(emailRequest $request){
