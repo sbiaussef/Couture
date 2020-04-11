@@ -1,5 +1,5 @@
 <?php
-namespace App\Repositories\Interfaces;
+namespace sayCouture\Repositories\Interfaces;
 
 interface CategoryInterface
 {

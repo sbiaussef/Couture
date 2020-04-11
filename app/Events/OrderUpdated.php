@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Events;
+namespace sayCouture\Events;
 
-use App\Order;
+use sayCouture\Order;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Foundation\Events\Dispatchable;

@@ -1,8 +1,8 @@
 <?php
 
-namespace App;
+namespace sayCouture;
 
-use App\Events\OrderUpdated;
+use sayCouture\Events\OrderUpdated;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
@@ -36,15 +36,15 @@ class Order extends Model
 
     public function customer()
     {
-        return $this->belongsTo('App\Customer');
+        return $this->belongsTo('sayCouture\Customer');
     }
     public function payment()
     {
-        return $this->belongsTo('App\Payment');
+        return $this->belongsTo('sayCouture\Payment');
     }
     public function shipper()
     {
-        return $this->belongsTo('App\Shipper');
+        return $this->belongsTo('sayCouture\Shipper');
     }
 
     public function orderDetails()

@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace sayCouture\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Mail\fromVisitorEmail;
-use App\Http\Requests\emailRequest;
+use sayCouture\Mail\fromVisitorEmail;
+use sayCouture\Http\Requests\emailRequest;
 use Illuminate\Support\Facades\Mail;
-use App\Repositories\Interfaces\ProductInterface;
-use App\Repositories\Interfaces\CategoryInterface;
-use App\Repositories\Interfaces\CollectionInterface;
+use sayCouture\Repositories\Interfaces\ProductInterface;
+use sayCouture\Repositories\Interfaces\CategoryInterface;
+use sayCouture\Repositories\Interfaces\CollectionInterface;
 
 class HomeController extends Controller
 {

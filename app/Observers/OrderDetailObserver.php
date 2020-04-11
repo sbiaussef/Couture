@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Observers;
+namespace sayCouture\Observers;
 
-use App\OrderDetail;
-use App\Services\OrderService;
+use sayCouture\OrderDetail;
+use sayCouture\Services\OrderService;
 
 class OrderDetailObserver{
     
@@ -11,7 +11,7 @@ class OrderDetailObserver{
         /**
      * Listen to the Order created event.
      *
-     * @param  \App\Order  $order
+     * @param  \sayCouture\Order  $order
      * @return void
      */
     public function created(OrderDetail $orderDetail)
@@ -25,7 +25,7 @@ class OrderDetailObserver{
     /**
      * Listen to the Order deleting event.
      *
-     * @param  \App\Order  $order
+     * @param  \sayCouture\Order  $order
      * @return void
      */
     public function deleting(OrderDetail $orderDetail)

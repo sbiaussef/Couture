@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace sayCouture;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,7 +14,7 @@ class Payment extends Model
 
     public function order()
     {
-        return $this->hasMany('App\Order', 'paymentID', 'paymentID');
+        return $this->hasMany('sayCouture\Order', 'paymentID', 'paymentID');
     }
 
 }

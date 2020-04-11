@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace sayCouture;
 
 use Illuminate\Database\Eloquent\Model;
 

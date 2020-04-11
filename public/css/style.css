@@ -65,7 +65,9 @@ p {
   opacity: 0.5;
 }
 
-
+a.ing {
+  color: #ac8533;
+}
 
 .section-heading {
   text-align: left;
@@ -179,7 +181,7 @@ header {
   text-align: center;
   background-color: rgba(0,0,0,0.9);
   margin-top: 59px;
-  width: 100%;
+  /* width: 100%; */
 }
 #main-nav ul li {
   margin: 15px 0px;
@@ -605,6 +607,7 @@ header {
 
 #collections .item .text-content h4 {
   margin-top: 0px;
+  text-align: center;
   margin-bottom: 5px;
   font-size: 21px;
   font-weight: 600;
@@ -1149,7 +1152,8 @@ font-weight: bold;
 }
 
 .text-content p{
-  width: 700px;
+  width: 100%;
+  text-align: center;
 }
 /* Responsive Style */
 @media (max-width:1225px){
@@ -1283,6 +1287,10 @@ font-weight: bold;
 }
 @media (max-width: 767px) {
 
+
+#projects .masonry {
+    margin-left: 19%;
+}
   .product-cover .product-header{
     text-align: center;
     margin: 30px auto;

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace sayCouture\Providers;
 
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'App\Events\OrderUpdated' => [
-            'App\Listeners\SendEmailToAdministrator',
+        'sayCouture\Events\OrderUpdated' => [
+            'sayCouture\Listeners\SendEmailToAdministrator',
         ],
     ];
 

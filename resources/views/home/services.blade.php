@@ -17,7 +17,7 @@
                         </div>
                         <div id="question" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body">
-                                 <h5><span class="label label-primary">Answer</span></h5>
+                                 <h5><span class="label label-warning">Answer</span></h5>
                                  <p>
                                     Nous Disposons de différents modèles sur place.</p>
                             </div>
@@ -32,7 +32,7 @@
                         </div>
                         <div id="question0" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body">
-                                 <h5><span class="label label-primary">Answer</span></h5>
+                                 <h5><span class="label label-warning">Answer</span></h5>
                 
                 
                                 <p>
@@ -57,7 +57,7 @@
                         </div>
                         <div id="question1" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body">
-                                 <h5><span class="label label-primary">Answer</span></h5>
+                                 <h5><span class="label label-warning">Answer</span></h5>
 
                                  <p> <br />
                                     Choisissez d'abord le design que vous aimez. Remplissez ensuite le formulaire de mesure et
@@ -82,7 +82,7 @@
                         </div>
                         <div id="question2" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body">
-                                 <h5><span class="label label-primary">Answer</span></h5>
+                                 <h5><span class="label label-warning">Answer</span></h5>
 
                                  <p>Après avoir payé et finalisé la commande, vous recevez dans les minutes qui suivent une confirmation
                                     de commande à l'adresse e-mail que vous avez indiqué.</p>
@@ -99,7 +99,7 @@
                         </div>
                         <div id="question3" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body">
-                                 <h5><span class="label label-primary">Answer</span></h5>
+                                 <h5><span class="label label-warning">Answer</span></h5>
 
                                  <p>
                                     Vous pouvez payer la commande en espèces ou par virement.</p>
@@ -116,7 +116,7 @@
                         </div>
                         <div id="question4" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body">
-                                 <h5><span class="label label-primary">Answer</span></h5>
+                                 <h5><span class="label label-warning">Answer</span></h5>
 
                                  <p>Nous avons des clients partout dans le monde, Nous utilisons ARAMEX pour livrer votre caftan à votre
                                     porte.</p>
@@ -132,7 +132,7 @@
                         </div>
                         <div id="question5" class="panel-collapse collapse" style="height: 0px;">
                             <div class="panel-body">
-                                 <h5><span class="label label-primary">Answer</span></h5>
+                                 <h5><span class="label label-warning">Answer</span></h5>
                                  <p> <br />
                                     Le délai de livraison estimé entre 2 à 3 semaines pour préparer un design pour la livraison. La date
                                     de

@@ -1,12 +1,12 @@
 <?php 
 
-namespace App\Services;
+namespace sayCouture\Services;
 
-use App\Product;
-use App\OrderDetail;
+use sayCouture\Product;
+use sayCouture\OrderDetail;
 use TCG\Voyager\Models\Role;
 use TCG\Voyager\Models\User;
-use App\Mail\AdminCommandMail;
+use sayCouture\Mail\AdminCommandMail;
 use Illuminate\Support\Facades\Mail;
 
 

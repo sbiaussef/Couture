@@ -174,7 +174,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        App\Providers\RepositoryServiceProvider::class,
+        sayCouture\Providers\RepositoryServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
         /*
          * Package Service Providers...
@@ -184,11 +184,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        sayCouture\Providers\AppServiceProvider::class,
+        sayCouture\Providers\AuthServiceProvider::class,
+        // sayCouture\Providers\BroadcastServiceProvider::class,
+        sayCouture\Providers\EventServiceProvider::class,
+        sayCouture\Providers\RouteServiceProvider::class,
 
     ],
 

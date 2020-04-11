@@ -10,10 +10,11 @@
         <nav>
             <ul class="nav navbar-nav">
                 <li><a href="#top">Home</a></li>
-                <li><a href="#featured">Featured</a></li>
+                <li><a href="#collections">Featured</a></li>
                 <li><a href="#projects">Recent Projects</a></li>
-                <li><a href="#video">Presentation</a></li>
-                <li><a href="#blog">Blog Entries</a></li>
+                <li><a href="#products">Presentation</a></li>
+                <li><a href="#about">Blog Entries</a></li>
+                <li><a href="#services">Blog Entries</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>

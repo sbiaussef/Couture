@@ -1,12 +1,12 @@
 <?php
-namespace App\Repositories\Eloquent;
+namespace sayCouture\Repositories\Eloquent;
 
-use App\Customer;
+use sayCouture\Customer;
 
-use App\Order;
-use App\OrderDetail;
-use App\Product;
-use App\Repositories\Interfaces\CommandInterface;
+use sayCouture\Order;
+use sayCouture\OrderDetail;
+use sayCouture\Product;
+use sayCouture\Repositories\Interfaces\CommandInterface;
 
 
 class CommandRepository implements CommandInterface{

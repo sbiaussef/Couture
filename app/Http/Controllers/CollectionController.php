@@ -1,7 +1,7 @@
 <?php
 
-namespace App\Http\Controllers;
-use App\Repositories\Interfaces\CollectionInterface;
+namespace sayCouture\Http\Controllers;
+use sayCouture\Repositories\Interfaces\CollectionInterface;
 
 class CollectionController extends Controller
 {

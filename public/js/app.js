@@ -36357,7 +36357,12 @@ var render = function() {
                       _c("div", { staticClass: "accent-button button" }, [
                         _c(
                           "a",
-                          { attrs: { href: prod.id, target: "_blank" } },
+                          {
+                            attrs: {
+                              href: "product/" + prod.slug,
+                              target: "_blank"
+                            }
+                          },
                           [_vm._v("Show more")]
                         )
                       ])

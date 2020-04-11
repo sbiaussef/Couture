@@ -1,8 +1,8 @@
 <?php
 
-namespace App;
+namespace sayCouture;
 
-use App\Product;
+use sayCouture\Product;
 use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model

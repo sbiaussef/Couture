@@ -12,7 +12,7 @@
               <p>{{ prod.productDescription.substring(0, 50) }}....</p>
 
               <div class="accent-button button">
-                <a :href="prod.id" target="_blank">Show more</a>
+                <a :href="'product/'+prod.slug" target="_blank">Show more</a>
               </div>
             </div>
           </div>

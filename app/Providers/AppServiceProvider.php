@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Providers;
+namespace sayCouture\Providers;
 
-use App\Order;
-use App\OrderDetail;
+use sayCouture\Order;
+use sayCouture\OrderDetail;
 use Illuminate\Support\Facades\Log;
-use App\Observers\OrderDetailObserver;
+use sayCouture\Observers\OrderDetailObserver;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider

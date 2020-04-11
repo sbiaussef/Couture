@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Listeners;
+namespace sayCouture\Listeners;
 
-use App\Events\OrderUpdated;
-use App\Services\EventService;
+use sayCouture\Events\OrderUpdated;
+use sayCouture\Services\EventService;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
