@@ -1,6 +1,6 @@
 <?php
 
-namespace sayCouture;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -22,7 +22,7 @@ class Customer extends Model
     protected $hidden = ['_token'];
     public function order()
     {
-        return $this->hasMany('sayCouture\Order');
+        return $this->hasMany('App\Order');
     }
 
 }

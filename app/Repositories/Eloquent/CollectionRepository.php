@@ -1,8 +1,8 @@
 <?php
-namespace sayCouture\Repositories\Eloquent;
+namespace App\Repositories\Eloquent;
 
-use sayCouture\Collection;
-use sayCouture\Repositories\Interfaces\CollectionInterface;
+use App\Collection;
+use App\Repositories\Interfaces\CollectionInterface;
 
 class CollectionRepository implements CollectionInterface
 {

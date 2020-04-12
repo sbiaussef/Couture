@@ -1,6 +1,6 @@
 <?php
 
-namespace sayCouture;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,6 +13,6 @@ class Shipper extends Model
     ];
     public function order()
     {
-        return $this->hasMany('sayCouture\Order', 'shipperID', 'shipperID');
+        return $this->hasMany('App\Order', 'shipperID', 'shipperID');
     }
 }

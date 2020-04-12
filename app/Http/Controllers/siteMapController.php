@@ -1,9 +1,9 @@
 <?php
 
-namespace sayCouture\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use sayCouture\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Spatie\Sitemap\SitemapGenerator;
 
 class siteMapController extends Controller

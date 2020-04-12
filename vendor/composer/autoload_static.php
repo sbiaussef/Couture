@@ -30,10 +30,6 @@ class ComposerStaticInit68d0127fbf3d3560d16d5d982efd07c9
     );
 
     public static $prefixLengthsPsr4 = array (
-        's' => 
-        array (
-            'sayCouture\\' => 11,
-        ),
         'p' => 
         array (
             'phpDocumentor\\Reflection\\' => 25,
@@ -177,14 +173,11 @@ class ComposerStaticInit68d0127fbf3d3560d16d5d982efd07c9
         'A' => 
         array (
             'Arrilot\\Widgets\\' => 16,
+            'App\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'sayCouture\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app',
-        ),
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
@@ -535,6 +528,10 @@ class ComposerStaticInit68d0127fbf3d3560d16d5d982efd07c9
         array (
             0 => __DIR__ . '/..' . '/arrilot/laravel-widgets/src',
         ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
+        ),
     );
 
     public static $fallbackDirsPsr4 = array (
@@ -573,6 +570,60 @@ class ComposerStaticInit68d0127fbf3d3560d16d5d982efd07c9
     );
 
     public static $classMap = array (
+        'App\\Category' => __DIR__ . '/../..' . '/app/Category.php',
+        'App\\Collection' => __DIR__ . '/../..' . '/app/Collection.php',
+        'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Customer' => __DIR__ . '/../..' . '/app/Customer.php',
+        'App\\Events\\OrderUpdated' => __DIR__ . '/../..' . '/app/Events/OrderUpdated.php',
+        'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
+        'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
+        'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+        'App\\Http\\Controllers\\CollectionController' => __DIR__ . '/../..' . '/app/Http/Controllers/CollectionController.php',
+        'App\\Http\\Controllers\\CommandController' => __DIR__ . '/../..' . '/app/Http/Controllers/CommandController.php',
+        'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\ProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProductController.php',
+        'App\\Http\\Controllers\\siteMapController' => __DIR__ . '/../..' . '/app/Http/Controllers/siteMapController.php',
+        'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
+        'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
+        'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
+        'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
+        'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
+        'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Requests\\CombinedRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CombinedRequest.php',
+        'App\\Http\\Requests\\CustomerRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CustomerRequest.php',
+        'App\\Http\\Requests\\OrderDetailsRequest' => __DIR__ . '/../..' . '/app/Http/Requests/OrderDetailsRequest.php',
+        'App\\Http\\Requests\\OrderRequest' => __DIR__ . '/../..' . '/app/Http/Requests/OrderRequest.php',
+        'App\\Http\\Requests\\emailRequest' => __DIR__ . '/../..' . '/app/Http/Requests/emailRequest.php',
+        'App\\Listeners\\SendEmailToAdministrator' => __DIR__ . '/../..' . '/app/Listeners/SendEmailToAdministrator.php',
+        'App\\Mail\\AdminCommandMail' => __DIR__ . '/../..' . '/app/Mail/AdminCommandMail.php',
+        'App\\Mail\\CommandMail' => __DIR__ . '/../..' . '/app/Mail/CommandMail.php',
+        'App\\Mail\\fromVisitorEmail' => __DIR__ . '/../..' . '/app/Mail/fromVisitorEmail.php',
+        'App\\Observers\\OrderDetailObserver' => __DIR__ . '/../..' . '/app/Observers/OrderDetailObserver.php',
+        'App\\Order' => __DIR__ . '/../..' . '/app/Order.php',
+        'App\\OrderDetail' => __DIR__ . '/../..' . '/app/OrderDetail.php',
+        'App\\Payment' => __DIR__ . '/../..' . '/app/Payment.php',
+        'App\\Product' => __DIR__ . '/../..' . '/app/Product.php',
+        'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
+        'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
+        'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
+        'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
+        'App\\Providers\\RepositoryServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RepositoryServiceProvider.php',
+        'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Repositories\\Eloquent\\CategoryRepository' => __DIR__ . '/../..' . '/app/Repositories/Eloquent/CategoryRepository.php',
+        'App\\Repositories\\Eloquent\\CollectionRepository' => __DIR__ . '/../..' . '/app/Repositories/Eloquent/CollectionRepository.php',
+        'App\\Repositories\\Eloquent\\CommandRepository' => __DIR__ . '/../..' . '/app/Repositories/Eloquent/CommandRepository.php',
+        'App\\Repositories\\Eloquent\\ProductRepository' => __DIR__ . '/../..' . '/app/Repositories/Eloquent/ProductRepository.php',
+        'App\\Repositories\\Interfaces\\CategoryInterface' => __DIR__ . '/../..' . '/app/Repositories/Interfaces/CategoryInterface.php',
+        'App\\Repositories\\Interfaces\\CollectionInterface' => __DIR__ . '/../..' . '/app/Repositories/Interfaces/CollectionInterface.php',
+        'App\\Repositories\\Interfaces\\CommandInterface' => __DIR__ . '/../..' . '/app/Repositories/Interfaces/CommandInterface.php',
+        'App\\Repositories\\Interfaces\\ProductInterface' => __DIR__ . '/../..' . '/app/Repositories/Interfaces/ProductInterface.php',
+        'App\\Services\\EventService' => __DIR__ . '/../..' . '/app/Services/EventService.php',
+        'App\\Services\\OrderService' => __DIR__ . '/../..' . '/app/Services/OrderService.php',
+        'App\\Shipper' => __DIR__ . '/../..' . '/app/Shipper.php',
+        'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
         'Arrilot\\Widgets\\AbstractWidget' => __DIR__ . '/..' . '/arrilot/laravel-widgets/src/AbstractWidget.php',
         'Arrilot\\Widgets\\AsyncFacade' => __DIR__ . '/..' . '/arrilot/laravel-widgets/src/AsyncFacade.php',
@@ -5411,60 +5462,6 @@ class ComposerStaticInit68d0127fbf3d3560d16d5d982efd07c9
         'phpDocumentor\\Reflection\\Types\\String_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/String_.php',
         'phpDocumentor\\Reflection\\Types\\This' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/This.php',
         'phpDocumentor\\Reflection\\Types\\Void_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Void_.php',
-        'sayCouture\\Category' => __DIR__ . '/../..' . '/app/Category.php',
-        'sayCouture\\Collection' => __DIR__ . '/../..' . '/app/Collection.php',
-        'sayCouture\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
-        'sayCouture\\Customer' => __DIR__ . '/../..' . '/app/Customer.php',
-        'sayCouture\\Events\\OrderUpdated' => __DIR__ . '/../..' . '/app/Events/OrderUpdated.php',
-        'sayCouture\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
-        'sayCouture\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
-        'sayCouture\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
-        'sayCouture\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
-        'sayCouture\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
-        'sayCouture\\Http\\Controllers\\CollectionController' => __DIR__ . '/../..' . '/app/Http/Controllers/CollectionController.php',
-        'sayCouture\\Http\\Controllers\\CommandController' => __DIR__ . '/../..' . '/app/Http/Controllers/CommandController.php',
-        'sayCouture\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
-        'sayCouture\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
-        'sayCouture\\Http\\Controllers\\ProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProductController.php',
-        'sayCouture\\Http\\Controllers\\siteMapController' => __DIR__ . '/../..' . '/app/Http/Controllers/siteMapController.php',
-        'sayCouture\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
-        'sayCouture\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
-        'sayCouture\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
-        'sayCouture\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
-        'sayCouture\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
-        'sayCouture\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
-        'sayCouture\\Http\\Requests\\CombinedRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CombinedRequest.php',
-        'sayCouture\\Http\\Requests\\CustomerRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CustomerRequest.php',
-        'sayCouture\\Http\\Requests\\OrderDetailsRequest' => __DIR__ . '/../..' . '/app/Http/Requests/OrderDetailsRequest.php',
-        'sayCouture\\Http\\Requests\\OrderRequest' => __DIR__ . '/../..' . '/app/Http/Requests/OrderRequest.php',
-        'sayCouture\\Http\\Requests\\emailRequest' => __DIR__ . '/../..' . '/app/Http/Requests/emailRequest.php',
-        'sayCouture\\Listeners\\SendEmailToAdministrator' => __DIR__ . '/../..' . '/app/Listeners/SendEmailToAdministrator.php',
-        'sayCouture\\Mail\\AdminCommandMail' => __DIR__ . '/../..' . '/app/Mail/AdminCommandMail.php',
-        'sayCouture\\Mail\\CommandMail' => __DIR__ . '/../..' . '/app/Mail/CommandMail.php',
-        'sayCouture\\Mail\\fromVisitorEmail' => __DIR__ . '/../..' . '/app/Mail/fromVisitorEmail.php',
-        'sayCouture\\Observers\\OrderDetailObserver' => __DIR__ . '/../..' . '/app/Observers/OrderDetailObserver.php',
-        'sayCouture\\Order' => __DIR__ . '/../..' . '/app/Order.php',
-        'sayCouture\\OrderDetail' => __DIR__ . '/../..' . '/app/OrderDetail.php',
-        'sayCouture\\Payment' => __DIR__ . '/../..' . '/app/Payment.php',
-        'sayCouture\\Product' => __DIR__ . '/../..' . '/app/Product.php',
-        'sayCouture\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
-        'sayCouture\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
-        'sayCouture\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
-        'sayCouture\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
-        'sayCouture\\Providers\\RepositoryServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RepositoryServiceProvider.php',
-        'sayCouture\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
-        'sayCouture\\Repositories\\Eloquent\\CategoryRepository' => __DIR__ . '/../..' . '/app/Repositories/Eloquent/CategoryRepository.php',
-        'sayCouture\\Repositories\\Eloquent\\CollectionRepository' => __DIR__ . '/../..' . '/app/Repositories/Eloquent/CollectionRepository.php',
-        'sayCouture\\Repositories\\Eloquent\\CommandRepository' => __DIR__ . '/../..' . '/app/Repositories/Eloquent/CommandRepository.php',
-        'sayCouture\\Repositories\\Eloquent\\ProductRepository' => __DIR__ . '/../..' . '/app/Repositories/Eloquent/ProductRepository.php',
-        'sayCouture\\Repositories\\Interfaces\\CategoryInterface' => __DIR__ . '/../..' . '/app/Repositories/Interfaces/CategoryInterface.php',
-        'sayCouture\\Repositories\\Interfaces\\CollectionInterface' => __DIR__ . '/../..' . '/app/Repositories/Interfaces/CollectionInterface.php',
-        'sayCouture\\Repositories\\Interfaces\\CommandInterface' => __DIR__ . '/../..' . '/app/Repositories/Interfaces/CommandInterface.php',
-        'sayCouture\\Repositories\\Interfaces\\ProductInterface' => __DIR__ . '/../..' . '/app/Repositories/Interfaces/ProductInterface.php',
-        'sayCouture\\Services\\EventService' => __DIR__ . '/../..' . '/app/Services/EventService.php',
-        'sayCouture\\Services\\OrderService' => __DIR__ . '/../..' . '/app/Services/OrderService.php',
-        'sayCouture\\Shipper' => __DIR__ . '/../..' . '/app/Shipper.php',
-        'sayCouture\\User' => __DIR__ . '/../..' . '/app/User.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

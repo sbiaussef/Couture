@@ -1,5 +1,5 @@
 <?php
-namespace sayCouture\Repositories\Interfaces;
+namespace App\Repositories\Interfaces;
 
 interface CollectionInterface
 {

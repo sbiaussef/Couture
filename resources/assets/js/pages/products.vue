@@ -8,9 +8,9 @@
             <img :src="'storage/' + JSON.parse(prod.pictures)[0]" alt="" />
             <div class="text-content">
               <h4>{{ prod.productName }}</h4>
-              <span>{{ prod.created_at }}</span>
               <p>{{ prod.productDescription.substring(0, 50) }}....</p>
 
+              <span>{{ prod.created_at | moment("MMM do,YYYY")  }}</span>
               <div class="accent-button button">
                 <a :href="'product/'+prod.slug" target="_blank">Show more</a>
               </div>

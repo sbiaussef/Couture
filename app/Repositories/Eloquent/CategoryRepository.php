@@ -1,9 +1,9 @@
 <?php
-namespace sayCouture\Repositories\Eloquent;
+namespace App\Repositories\Eloquent;
 
-use sayCouture\Product;
-use sayCouture\Category;
-use sayCouture\Repositories\Interfaces\CategoryInterface;
+use App\Product;
+use App\Category;
+use App\Repositories\Interfaces\CategoryInterface;
 
 class CategoryRepository implements CategoryInterface
 {

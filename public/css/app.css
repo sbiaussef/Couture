@@ -5369,7 +5369,7 @@ tbody.collapse.in {
 }
 
 .navbar-toggle {
-  position: relative;
+  /* position: relative; */
   float: right;
   padding: 9px 10px;
   margin-right: 15px;

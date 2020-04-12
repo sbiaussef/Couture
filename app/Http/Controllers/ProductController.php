@@ -1,8 +1,8 @@
 <?php
 
-namespace sayCouture\Http\Controllers;
+namespace App\Http\Controllers;
 
-use sayCouture\Repositories\Interfaces\ProductInterface;
+use App\Repositories\Interfaces\ProductInterface;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller

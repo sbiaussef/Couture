@@ -1,9 +1,9 @@
 <?php
-namespace sayCouture\Services;
+namespace App\Services;
 
-use sayCouture\Order;
-use sayCouture\Product;
-use sayCouture\Mail\CommandMail;
+use App\Order;
+use App\Product;
+use App\Mail\CommandMail;
 use Illuminate\Support\Facades\Mail;
 
 class OrderService{

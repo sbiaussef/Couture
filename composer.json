@@ -33,7 +33,7 @@
             "database/factories"
         ],
         "psr-4": {
-            "sayCouture\\": "app/"
+            "App\\": "app/"
         }
     },
     "autoload-dev": {

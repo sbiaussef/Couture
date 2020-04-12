@@ -1,6 +1,6 @@
 <?php
 
-namespace sayCouture;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
@@ -33,7 +33,7 @@ public function scopeGetProduct(Builder $builder,$product){
 }
     public function supplier()
     {
-        return $this->belongsTo('sayCouture\Supplier');
+        return $this->belongsTo('App\Supplier');
     }
     public function category()
     {

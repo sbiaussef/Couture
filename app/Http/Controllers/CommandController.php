@@ -1,9 +1,9 @@
 <?php
 
-namespace sayCouture\Http\Controllers;
+namespace App\Http\Controllers;
 
-use sayCouture\Http\Requests\CombinedRequest;
-use sayCouture\Repositories\Interfaces\CommandInterface;
+use App\Http\Requests\CombinedRequest;
+use App\Repositories\Interfaces\CommandInterface;
 
 class CommandController extends Controller
 {

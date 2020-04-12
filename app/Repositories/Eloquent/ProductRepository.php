@@ -1,8 +1,8 @@
 <?php
-namespace sayCouture\Repositories\Eloquent;
+namespace App\Repositories\Eloquent;
 
-use sayCouture\Product;
-use sayCouture\Repositories\Interfaces\ProductInterface;
+use App\Product;
+use App\Repositories\Interfaces\ProductInterface;
 
 class ProductRepository implements ProductInterface
 {
