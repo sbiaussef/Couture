@@ -984,8 +984,8 @@ header {
   margin-right: 30px;
   max-width: 100%;
   overflow: hidden;
-    height: 330px;
-  width: 306px;
+  height: 330px;
+  width: 50%;
 }
 #products .tabgroup ul li .text-content {
   display: inline;
@@ -1153,15 +1153,13 @@ font-weight: bold;
 
 .text-content p{
   width: 100%;
-  width: 600px;
+}
+#collect p{
+  width: 100%;
+  text-align: center;
 }
 /* Responsive Style */
-/* @media (max-width:1225px){
-  
-.text-content p{
-  
-}
-} */
+
 @media (max-width: 992px) {
 
   .product-cover{
@@ -1263,14 +1261,16 @@ font-weight: bold;
 
     
 .text-content p{
-  width: 500px;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 }
 
 @media (max-width: 885px) {
 
+  .text-content p {
+    text-align: center;
+}
   #products .tabgroup ul li {
     display: block;
     text-align: center;
@@ -1279,10 +1279,6 @@ font-weight: bold;
   text-align: center;
 }
   #products .tabgroup ul li img {
-    width: 100%;
-}
-  .text-content p {
-    text-align: center;
     width: 100%;
 }
 
@@ -1479,9 +1475,6 @@ font-weight: bold;
       padding: 150px 5px;
       font-size: 30px;
     font-weight: bold;
-    }
-    .text-content p{
-      width: 100%;
     }
 
 }

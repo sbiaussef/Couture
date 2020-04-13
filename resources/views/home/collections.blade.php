@@ -18,7 +18,7 @@
                     <a href="{{url('collection/'.$collection->slug)}}" target="_blank">Show More</a>
                     </div>
                 </div>
-                <div class="text-content">
+                <div class="text-content" id="collect">
                 <h4>{{$collection->name}}</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus, tempore dolor quia magni assumenda iste saepe voluptatibus mollitia quis.

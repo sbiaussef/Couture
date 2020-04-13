@@ -36390,7 +36390,7 @@ var render = function() {
                     {
                       on: {
                         click: function($event) {
-                          return _vm.getProducts(_vm.pagination.prev)
+                          return _vm.getProducts(_vm.pagination.firstPage)
                         }
                       }
                     },
@@ -36422,7 +36422,7 @@ var render = function() {
                     {
                       on: {
                         click: function($event) {
-                          return _vm.getProducts(_vm.pagination.next)
+                          return _vm.getProducts(_vm.pagination.lastPage)
                         }
                       }
                     },

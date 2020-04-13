@@ -22,7 +22,7 @@
     <div class="pagination">
       <ul>
         <li :class="[{ disabled: !pagination.prev }]">
-          <a @click="getProducts(pagination.prev)"><<</a>
+          <a @click="getProducts(pagination.firstPage)"><<</a>
         </li>
         <li v-for="(item, index) in pagination.last" :key="index">
           <a @click="getProducts('/productByCategory?page=' + item)">{{
@@ -30,7 +30,7 @@
           }}</a>
         </li>
         <li :class="[{ disabled: !pagination.next }]">
-          <a @click="getProducts(pagination.next)">>></a>
+          <a @click="getProducts(pagination.lastPage)">>></a>
         </li>
       </ul>
     </div>
