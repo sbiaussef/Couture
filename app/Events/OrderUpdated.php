@@ -12,7 +12,7 @@ class OrderUpdated
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $order;
+    private $order;
     /**
      * Create a new event instance.
      *
@@ -24,7 +24,9 @@ class OrderUpdated
        
     }
 
-
+    public function getOrder(){
+        return $this->order;
+    }
     /**
      * Get the channels the event should broadcast on.
      *

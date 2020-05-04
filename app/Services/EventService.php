@@ -19,7 +19,7 @@ class EventService{
     * @return void
     */
     public static function sendEmailToAdmin($event){
-        $orderDetail=OrderDetail::where('order_id',$event->order->id)->get()->first();
+        $orderDetail=OrderDetail::where('order_id',$event->getOrder()->id)->get()->first();
         $productinfo = Product::getProduct($orderDetail->product_id);
         $admins = User::where('role_id',Role::where('name','admin')->get(['id'])->first()->id)
                         ->pluck('email')->toArray();

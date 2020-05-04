@@ -229,6 +229,7 @@
 @media (max-width: 767px) {
   .preview {
     margin-bottom: 20px;
+    margin-left: 15%;
   }
   .card {
     width: 80%;
@@ -269,12 +270,13 @@
 }
 @media (max-width : 614px){
   .preview-thumbnail.nav-tabs li {
-    width: 19.4%;
+    width: 19.2%;
 }
 }
 @media (max-width : 534px){
+
   .preview-thumbnail.nav-tabs li {
-    width: 19.3%;
+    width: 18.8%;
 }
 }
 /*# sourceMappingURL=style.css.map *

@@ -20,9 +20,9 @@ class CommandRepository implements CommandInterface{
                 "email"=>$request->email,
                 "phone"=>$request->phone
             ]);
-        }else{
-            return ($customer);
         }
+            return ($customer);
+        
     }
     public function addNewOrder($Customer){
             return Order::create([
