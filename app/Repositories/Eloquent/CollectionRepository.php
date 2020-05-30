@@ -8,7 +8,7 @@ class CollectionRepository implements CollectionInterface
 {
     public function getAllCollections(){
         
-        return Collection::orderBy('created_at', 'desc')->get(['id','name','picture','slug']);
+        return Collection::orderBy('id', 'desc')->get(['id','name','picture','slug']);
         
     }
     public function getProductsByCollection( $slug ){

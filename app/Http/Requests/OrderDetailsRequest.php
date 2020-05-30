@@ -29,6 +29,7 @@ class OrderDetailsRequest extends FormRequest
             'longueur_poitrine'=>'required|numeric|max:300',
             'taille'=>'required|numeric|max:300',
             'taille_des_epaules'=>'required|numeric|max:300',
+            'comment' => 'string|max:300'
         ];
     }
     /**

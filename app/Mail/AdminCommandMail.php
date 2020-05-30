@@ -36,13 +36,15 @@ class AdminCommandMail extends Mailable
     {
         $picture =collect((json_decode($this->product->pictures)))->first();
         $details=json_decode($this->orderDetail->details);
+        $comment=$this->orderDetail->commet;
         return $this->from("sbia.youssef@gmail.com")
                     ->subject('Nex Order is passed')
                     ->view('email.adminCommandEmail')
                     ->with([
                         'product' => $this->product,
                         'picture'=> $picture,
-                        'details'=>$details
+                        'details'=>$details,
+                        'comment'=>$comment
                     ]);
 
     }

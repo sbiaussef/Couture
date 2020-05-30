@@ -4559,7 +4559,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.disabled[data-v-ae78bafe] {\r\n  pointer-events: none;\r\n  opacity: 0.6;\n}\n.disabled a[data-v-ae78bafe] {\r\n  background-color: gainsboro;\n}\n.pagination[data-v-ae78bafe] {\r\n  display: inline-block;\n}\n.pagination ul li a[data-v-ae78bafe] {\r\n  color: peru;\r\n  float: left;\r\n  padding: 8px 16px;\r\n  text-decoration: none;\r\n  cursor: pointer;\n}\n.pagination ul li a[data-v-ae78bafe]:hover {\r\n  color: burlywood;\n}\n#products .tabgroup ul li[data-v-ae78bafe]:last-child {\r\n  display: inline-block;\r\n  text-align: left;\r\n  margin-bottom: 10px;\r\n  padding-bottom: 20px;\r\n  border-bottom: 1px solid #ddd;\n}\r\n", ""]);
+exports.push([module.i, "\n.disabled[data-v-ae78bafe] {\r\n  pointer-events: none;\r\n  opacity: 0.6;\n}\n.disabled a[data-v-ae78bafe] {\r\n  background-color: darkkhaki;\n}\n.pagination[data-v-ae78bafe] {\r\n  display: inline-block;\n}\n.pagination ul li a[data-v-ae78bafe] {\r\n  color: peru;\r\n  float: left;\r\n  padding: 8px 16px;\r\n  text-decoration: none;\r\n  cursor: pointer;\n}\n.pagination ul li a[data-v-ae78bafe]:hover {\r\n  color: burlywood;\n}\n#products .tabgroup ul li[data-v-ae78bafe]:last-child {\r\n  display: inline-block;\r\n  text-align: left;\r\n  margin-bottom: 10px;\r\n  padding-bottom: 20px;\r\n  border-bottom: 1px solid #ddd;\n}\r\n", ""]);
 
 // exports
 
@@ -36403,6 +36403,7 @@ var render = function() {
                     _c(
                       "a",
                       {
+                        class: [{ disabled: item == _vm.pagination.first }],
                         on: {
                           click: function($event) {
                             return _vm.getProducts(
@@ -53685,8 +53686,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! H:\Projects\Laravel\Couture\resources\assets\js\app.js */"./resources/assets/js/app.js");
-module.exports = __webpack_require__(/*! H:\Projects\Laravel\Couture\resources\assets\sass\app.scss */"./resources/assets/sass/app.scss");
+__webpack_require__(/*! D:\Projects\LARAVEL\Couture\resources\assets\js\app.js */"./resources/assets/js/app.js");
+module.exports = __webpack_require__(/*! D:\Projects\LARAVEL\Couture\resources\assets\sass\app.scss */"./resources/assets/sass/app.scss");
 
 
 /***/ })

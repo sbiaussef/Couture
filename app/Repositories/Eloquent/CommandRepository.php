@@ -49,7 +49,8 @@ class CommandRepository implements CommandInterface{
             'taille'=>$request->taille,
             'taille_des_epaules'=>$request->taille_des_epaules
         ]);
-
+        $orderDetail->comment=$request->comment;
+        
         return $orderDetail->save();
     }
 

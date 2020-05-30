@@ -10,7 +10,7 @@
         @if ($collection->products->isNotEmpty())
                     
         @foreach ($collection->products as $product)
-        <div class="col-sm-5 col-md-4 col-lg-3 mb-4 py-5 single-product">
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4 py-5 single-product">
             <div class="card h-100 ">
                                  <div class="text-center">
                         <div class="hovereffect">

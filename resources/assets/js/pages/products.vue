@@ -25,7 +25,7 @@
           <a @click="getProducts(pagination.firstPage)"><<</a>
         </li>
         <li v-for="(item, index) in pagination.last" :key="index">
-          <a @click="getProducts('/productByCategory?page=' + item)">{{
+          <a @click="getProducts('/productByCategory?page=' + item)" :class="[{ disabled: item==pagination.first }]">{{
             item
           }}</a>
         </li>
@@ -94,7 +94,7 @@ export default {
   opacity: 0.6;
 }
 .disabled a {
-  background-color: gainsboro;
+  background-color: darkkhaki;
 }
 
 .pagination {

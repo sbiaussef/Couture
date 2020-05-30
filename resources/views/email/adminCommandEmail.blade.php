@@ -455,7 +455,8 @@
                           </tr>
                         </tbody>
                       </table>
-                      <p>Good luck! Hope it works.</p>
+                      <p>comment: {{ $comment }}</p>
+                      <p>have a nice time.</p>
                     </td>
                   </tr>
                 </table>
