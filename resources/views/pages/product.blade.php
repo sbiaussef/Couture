@@ -2,7 +2,11 @@
 
 @section('style')
 
+<link rel="stylesheet" href="/css/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="/css/assets/owl.theme.default.min.css">
+
 <link rel="stylesheet" href="/css/single.css">
+
 
 @endsection
 @section('content')
@@ -22,13 +26,20 @@
                             </div>
                             @endforeach
                         </div>
-                            <ul class="preview-thumbnail nav nav-tabs">
-                                @foreach (collect((json_decode($product->pictures))) as $url)
-                                <li class="{{$loop->first==$url?'active':''}}"><a data-target="#pic-{{ $loop->iteration }}" data-toggle="tab"><img
-                                            src="/storage/{{$url}}" /></a></li>
-                                @endforeach
-                            </ul>
 
+                        <div class=" owl-carousel">
+                            {{-- <ul class="preview-thumbnail nav nav-tabs"> --}}
+                                @foreach (collect((json_decode($product->pictures))) as $url)
+                                {{-- <li class="{{$loop->first==$url?'active':''}}"><a data-target="#pic-{{ $loop->iteration }}" data-toggle="tab"><img
+                                            src="/storage/{{$url}}" /></a></li> --}}
+                                    <div class="preview-thumbnail nav nav-tabs col-md-3 {{$loop->first==$url?'active':''}}">
+                                        <a data-target="#pic-{{ $loop->iteration }}" data-toggle="tab">
+                                            <img class="secondary-img"  src="/storage/{{$url}}" />
+                                        </a>
+                                    </div>
+                                @endforeach
+                            {{-- </ul> --}}
+                        </div>
                             @else
                             <h1 class="error-product">this is No Pictures for this Product</h1> 
                             @endif
@@ -78,4 +89,14 @@
     </div>
 </div>
 @include('includes.footer')
+@endsection
+
+@section('script')
+<script src="/js/owl.carousel.min.js"></script>
+        
+<script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel();
+    });
+</script>
 @endsection
